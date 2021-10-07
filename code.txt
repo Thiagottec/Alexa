@@ -1,0 +1,19 @@
+    <form class="form">
+        <div class="form-group">
+            <label for="jogos">Jogos</label>
+            <select id="cboJogos" title="Jogos">
+                <option value="01">Adolpho e Rafael D. Nogueira</option>
+                <option value="02">Paulo Albuquerque e Juliana Thomaz</option>
+                <option value="03">Marcelo Basso e Alexis Aguirre</option>
+                <option value="04">Fernanda Manente e Rafael Borghi</option>
+                <option value="05">Ricardo Villagelin e Anderson Félix Barbieri</option>
+                <option value="06">Andre Toriello e Flavio Strazza</option>
+                <option value="07">Larissa Quirino e Thiago Pereira</option>
+                <option value="08">Rafael Leiria Nunes e Pedro Bellucci</option>
+                <option value="09">Luis Scheneider e Breno Aguirre</option>
+                <option value="10">Rafaella Strazza e Dario Moretti</option>
+                <option value="11">Fernando Fonseca e Danilo Manente</option>
+                <option value="12">Fabio José Quirino e Carlos Bravo</option>            
+            </select>
+        </div>
+    </form>

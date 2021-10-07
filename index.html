@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="openGeneve" content="width=device-width">
+    <title>Open Genève</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+
+<body class="container">
+
+    <h1 class="text-center">Open Genève Tennis</h1>
+    <h6 class="text-center">versão 4.0</h6>
+
+    <form class="form" onsubmit="OpenControllercls.randomPlayers(event)">
+
+        <table class="table table-hover table-bordered" id="players">
+            <thead>
+                <tr>
+                    <th>Nomes Jogadores</th>
+                </tr>
+            </thead>
+            <tbody id="tbodyPlayers">
+                <tr>
+                    <td>Adolpho Cardoso</td>
+                </tr>
+                <tr>
+                    <td>Alexis Aguirre</td>
+                </tr>
+                <tr>
+                    <td>Anderson Félix Barbieri</td>
+                </tr>
+                <tr>
+                    <td>Andre Toriello</td>
+                </tr>
+                <tr>
+                    <td>Breno Aguirre</td>
+                </tr>
+                <tr>
+                    <td>Bruno Widmer</td>
+                </tr>
+                <tr>
+                    <td>Carlos Bravo</td>
+                </tr>
+                <tr>
+                    <td>Danilo Manente</td>
+                </tr>
+                <tr>
+                    <td>Dario Moretti</td>
+                </tr>
+                <tr>
+                    <td>Douglas de Lima Santana</td>
+                </tr>
+                <tr>
+                    <td>Enrico Aguirre</td>
+                </tr>
+                <tr>
+                    <td>Fabio José Quirino</td>
+                </tr>
+                <tr>
+                    <td>Fernanda Manente</td>
+                </tr>
+                <tr>
+                    <td>Fernando Fonseca</td>
+                </tr>
+                <tr>
+                    <td>Gabriela Devides Kobayashi</td>
+                </tr>
+                <tr>
+                    <td>Marcelo Basso</td>
+                </tr>
+                <tr>
+                    <td>Marco Aurelio Antonio Gouvêa</td>
+                </tr>
+                <tr>
+                    <td>Marcos da Silva</td>
+                </tr>
+                <tr>
+                    <td>Paulo Albuquerque</td>
+                </tr>
+                <tr>
+                    <td>Pedro Bellucci</td>
+                </tr>
+                <tr>
+                    <td>Rafael Borghi</td>
+                </tr>
+                <tr>
+                    <td>Rafael D. Nogueir</td>
+                </tr>
+                <tr>
+                    <td>Rafael Leiria Nunes</td>
+                </tr>
+                <tr>
+                    <td>Remolo</td>
+                </tr>
+                <tr>
+                    <td>Ricardo Cintra</td>
+                </tr>
+                <tr>
+                    <td>Ricardo Villagelin</td>
+                </tr>
+                <tr>
+                    <td>Rodrigo Moretti</td>
+                </tr>
+                <tr>
+                    <td>Thiago Pereira</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+            </tfoot>
+        </table>
+
+        <button class="btn btn-primary" type="submit">Selecionar Jogo</button>
+    </form>
+
+    <br>
+
+    <form class="form" onsubmit="OpenControllercls.sortearJogos(event)">
+        <table id="resultado" class="table table-hover table-bordered">
+            <thead id="theadResult">
+                <tr>
+                    <th># Jogo</th>
+                    <th>Jogador 1</th>
+                    <th>x</th>
+                    <th>Jogador 2</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbodyResult">
+
+            </tbody>
+
+            <tfoot>
+
+            </tfoot>
+        </table>
+
+        <button class="btn btn-primary" type="submit">Sortear Jogos</button>
+
+    </form>
+
+    <br>
+
+    <form class="form" onsubmit="OpenControllercls.quemPula(event)">
+        <table id="quempula" class="table table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Quem Pula?</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbodyJump">
+
+            </tbody>
+
+            <tfoot>
+
+            </tfoot>
+        </table>
+
+        <button class="btn btn-primary" type="submit">Identificar quem pula</button>
+
+    </form>
+
+    <br>
+
+    <form class="form" onsubmit="OpenControllercls.writeToLocalFile(event)">
+        <button class="btn btn-primary" type="submit">Exportar resultado</button>
+    </form>
+
+    <script src="js/controller/openController.js"></script>
+    <script>
+        let OpenControllercls = new OpenController();
+    </script>
+
+</body>
+
+</html>

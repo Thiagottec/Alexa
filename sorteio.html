@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" name="openGeneve" content="width=device-width">
+    <title>Sorteio Open Genève</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+
+<body class="container">
+
+    <h1 class="text-center">Sorteio Open Genève Tennis</h1>
+    <h6 class="text-center">versão 1.0</h6>
+
+    <br>
+
+    <form class="form" onsubmit="OpenControllercls.sortearHorarios(event)">
+        <table id="resultado" class="table table-hover table-bordered">
+            <thead id="theadHorarioJogo">
+                <tr>
+                    <th>Horáros</th>
+                    <th>Jogos</th>
+                </tr>
+            </thead>
+
+            <tbody id="tbodyHorarioJogo">
+
+            </tbody>
+
+            <tfoot>
+
+            </tfoot>
+        </table>
+        <button class="btn btn-primary" type="submit">Sortear horários</button>
+    </form>
+
+    <script src="js/controller/openController.js"></script>
+    <script>
+        let OpenControllercls = new OpenController();
+    </script>
+
+</body>
+
+</html>
